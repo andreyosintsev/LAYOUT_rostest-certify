@@ -44,7 +44,7 @@ h1 {
 
 .main p {
     margin-top: 0;
-    margin-bottom: 13px;
+    margin-bottom: 4px;
 }
 
 .main p:last-child {
@@ -54,7 +54,7 @@ h1 {
 .hero {
     display: flex;
 
-    padding: 184px 80px 60px;
+    padding: 184px 80px 100px;
 
     background-color: var(--page-bg);
 }
@@ -73,7 +73,7 @@ h1 {
     font-weight: 700;
     line-height: 54px;
 
-    margin-bottom: 40px;
+    margin-bottom: 52px;
 }
 
 .main {
@@ -106,37 +106,35 @@ h1 {
     background-color: var(--ad_gray);
 }
 
-.examples__title {
+.manufacturers__title {
     margin-bottom: 8px !important;
 }
 
-.examples__items {
-    padding: 16px;
-
-    color: var(--text-color-main);
-    font-family: var(--text-family);
-
-    background-color: var(--white);
-
-    border-radius: var(--border-radius-xlarge);
-    box-shadow: 4px 4px 24px rgba(4, 13, 42, 0.01);
-
-    overflow: hidden;
-
-    list-style: none;
+.manufacturers__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
 }
 
-.examples__item {
-    margin-bottom: 16px;
+.manufacturers__chapter {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 22px;
+
+    border-bottom: 1px solid #E2E5EE;
 }
 
-.examples__item:last-child {
+.main .manufacturers-item__thumb-title {
     margin-bottom: 0;
 }
 
-.examples__image {
-    width: 100%;
-    height: auto;
+.manufacturers-data {
+    margin-bottom: 16px;
 }
 
 .certificates__title {
@@ -151,16 +149,6 @@ h1 {
 
 .certificates__nav {
     padding-top: 16px;
-}
-
-.manufacturers__title {
-    margin-bottom: 16px;
-}
-
-.manufacturers__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
 }
 
 .agencies__title {
@@ -212,7 +200,7 @@ h1 {
     }
 
     .hero__title {
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
 
     .hero__image {
