@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products List Block</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/consts.css">
+    <link rel="stylesheet" href="./css/products-list.css">
+</head>
+<body style="background-color: yellowgreen; padding: 10px;">
+    <div class="products-list">
+        <div class="products-list__classificators">
+            <button class="products-list__classificator products-list__classificator_active" type="button">
+                ОКП (ОК 005)
+            </button>
+            <button class="products-list__classificator" type="button">
+                ТН ВЭД ТС
+            </button>
+        </div>
+        <p class="products-list__article">
+            Представлены сертификаты соответствия на продукцию по коду ОКП (ОК 005) - общероссийского классификатора продукции.
+        </p>
+        <p class="products-list__article">
+            Сертификаты отсортированы по первым двум цифрам кода ОКП.
+        </p>
+        <div class="product-list__item product-item">
+            <div class="product-item__title">
+                <div class="product-item__group">
+                    01
+                </div>                
+                <div class="product-item__description">
+                    Электроэнергия, теплоэнергия, вода, лед, холод
+                </div>
+            </div>
+            <ul class="product-item__content">
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Электроэнергия">
+                        <div class="product-content-item__code">
+                            01 1000
+                        </div>
+                        <div class="product-content-item__description">
+                            Электроэнергия
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Вода питьевая">
+                        <div class="product-content-item__code">
+                            01 3100
+                        </div>
+                        <div class="product-content-item__description">
+                            Вода питьевая
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="product-list__item product-item">
+            <div class="product-item__title">
+                <div class="product-item__group">
+                    02
+                </div>                
+                <div class="product-item__description">
+                    Нефть, нефтепродукты, альтернативные виды топлива. Газ
+                </div>
+            </div>
+            <ul class="product-item__content">
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Бензины - растворители (сортовые)">
+                        <div class="product-content-item__code">
+                            02 5113
+                        </div>
+                        <div class="product-content-item__description">
+                            Бензины - растворители (сортовые)
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Бензины автомобильные класса 3">
+                        <div class="product-content-item__code">
+                            02 5116
+                        </div>
+                        <div class="product-content-item__description">
+                            Бензины автомобильные класса 3
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Керосины прочие">
+                        <div class="product-content-item__code">
+                            02 5129
+                        </div>
+                        <div class="product-content-item__description">
+                            Керосины прочие
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Нефтепродукты светлые прочие">
+                        <div class="product-content-item__code">
+                            02 5190
+                        </div>
+                        <div class="product-content-item__description">
+                            Нефтепродукты светлые прочие
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item__content-item product-content-item">
+                    <a class="product-content-item__link" href="#" tltle="Сертификаты на Масла моторные">
+                        <div class="product-content-item__code">
+                            02 5310
+                        </div>
+                        <div class="product-content-item__description">
+                            Масла моторные
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/products-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.sidebar-stats {
+    width: 100%;
+    padding: 16px;
+
+    color: var(--text-color-main);
+    font-family: var(--text-family);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 15px;
+
+    background-color: var(--white);
+
+    border-radius: var(--border-radius-large);
+
+    box-shadow: 4px 4px 24px rgba(4, 13, 42, 0.01);
+}
+
+.sidebar-stats__title {
+    margin-bottom: 16px;
+
+    font-size: 13px;
+    font-weight: 700;    
+}
+
+
+.sidebar-stats__certificates {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 16px;;
+
+    color: var(--link-color);
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.sidebar-stats__certificates-value {
+    font-size: 52px;
+    font-weight: 900;
+
+    line-height: 63px;
+}
+
+.sidebar-stats__manufacturers-agencies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 16px;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    line-height: 39px;
+}
+
+.sidebar-stats__manufacturers,
+.sidebar-stats__agencies {
+    width: 100%;
+
+    color: var(--link-color);
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.sidebar-stats__certificates:hover,
+.sidebar-stats__manufacturers:hover,
+.sidebar-stats__agencies:hover {
+    color: var(--link-color_hover);
+
+    text-decoration: none;
+}
+
+.sidebar-stats__certificates-subtitle,
+.sidebar-stats__manufacturers-subtitle,
+.sidebar-stats__agencies-subtitle {
+    width: 100%;
+
+    color: var(--light-black);
+    font-size: 12px;
+    font-weight: 500;
+
+    line-height: 15px;
+    text-align: left;
+}
