@@ -1,7 +1,6 @@
 .certificates-table {
     display: grid;
     grid-template-columns: repeat(3, auto);
-
     padding: 20px;
 
     color: var(--text-color-main);
@@ -35,6 +34,12 @@
 
 .certificates-table__cell:nth-child(3n+2) {
     text-decoration: underline;
+}
+
+.certificates-table__cell:nth-last-child(-n+3)
+ {
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .certificates-table__cell_header {
@@ -98,7 +103,8 @@
     width: 24px;
     height: 16px;
     margin-right: 8px;
-    
+
+    flex-shrink: 0;    
 }
 
 .certificates-table__flag img {
