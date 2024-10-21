@@ -1,8 +1,8 @@
 .breadcrumbs {
     display: block;
 
-    color: var(--text-color-main);
-    font-family: var(--text-family);
+    color: var(--text-color-main, #0C1227);
+    font-family: var(--text-family, sans-serif);
     font-size: 11px;
     font-weight: 500;
 
@@ -10,13 +10,13 @@
 }
 
 .breadcrumbs__link {
-    color: var(--link-color);
+    color: var(--link-normal-color, #2F448A);
 
     text-decoration: none;
 }
 
 .breadcrumbs__link:hover {
-    color: var(--link-color_hover);
+    color: var(--link-normal-color_hover, #5969A1);
 
     text-decoration: underline;
 }

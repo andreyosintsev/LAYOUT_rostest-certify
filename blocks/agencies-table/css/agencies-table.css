@@ -4,16 +4,16 @@
 
     padding: 20px;
 
-    color: var(--text-color-main);
+    color: var(--text-color-main, #0C1227);
     font-size: 12px;
-    font-family: var(--text-family);
+    font-family: var(--text-family, sans-serif);
     font-weight: 500;
 
     line-height: 12px;
 
-    background-color: var(--white);
+    background-color: var(--white, #FFFFFF);
 
-    border-radius: var(--border-radius-xlarge);
+    border-radius: var(--border-radius-xlarge, 20px);
     box-shadow: 4px 4px 24px rgba(4, 13, 42, 0.01);
 
     overflow: auto;
@@ -30,11 +30,11 @@
 .agencies-table__cell_header {
     padding-top: 0;
 
+    color: var(--black-light, #4F5463);
+
     border: none;
 
     white-space: nowrap;
-
-    opacity: 72%;
 }
 
 .agencies-table__cell_info {
@@ -43,15 +43,15 @@
     margin-bottom: 20px;
     padding: 12px !important;
 
-    opacity: 72%;
+    color: var(--black-light, #4F5463);
     font-size: 11px;
 
     line-height: 13px;
 
-    background-color: var(--off-white);
+    background-color: var(--off-white, #F9F9FB);
 
     border-top: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius, 12px);
 }
 
 .agencies-table__cell_name {
@@ -75,14 +75,18 @@
 }
 
 .agencies-table__link:hover {
-    color: var(--link-color-black_hover);
+    color: var(--link-black-color_hover, #2F448A);
 }
 
 .agencies-table__link_website {
     margin-top: 4px;
 
-    color: var(--link-color-gray);
+    color: var(--link-gray-color, #505463);
     font-size: 10px;
+}
+
+.agencies-table__link_website_hover {
+    color: var(--link-gray-color_hover, #505463);
 }
 
 .agencies-table__scroll {
@@ -90,17 +94,17 @@
     width: 12px;
     height: 12px;
 
-    background: url(../images/scroll.svg) 2px 1px no-repeat;
+    background: url(../../../common/images/scroll.svg) 2px 1px no-repeat;
 
     cursor: pointer;
 }
 
 .agencies-table__scroll_up {
-    background: url(../images/scroll-up.svg) 2px 1px no-repeat;
+    background: url(../../../common/images/scroll-up.svg) 2px 1px no-repeat;
 }
 
 .agencies-table__scroll_down {
-    background: url(../images/scroll-down.svg) 2px 1px no-repeat;
+    background: url(../../../common/images/scroll-down.svg) 2px 1px no-repeat;
 }
 
 .agencies-table__expandinfo::before {
@@ -108,19 +112,19 @@
     display: inline-block;
     width: 14px;
     height: 10px;
-    background: url(../images/arrow-down.svg) 0px -2px no-repeat;
+    background: url(../../../common/images/arrow-down.svg) 0px -2px no-repeat;
 }
 
 .agencies-table__expandinfo:hover::before {
-    background: url(../images/arrow-down_hover.svg) 0px -2px no-repeat;
+    background: url(../../../common/images/arrow-down_hover.svg) 0px -2px no-repeat;
 }
 
 .agencies-table__expandinfo_expanded::before  {
-    background: url(../images/arrow-up.svg)  0px -2px no-repeat;
+    background: url(../../../common/images/arrow-up.svg)  0px -2px no-repeat;
 }
 
 .agencies-table__expandinfo_expanded:hover::before  {
-    background: url(../images/arrow-up_hover.svg)  0px -2px no-repeat;
+    background: url(../../../common/images/arrow-up_hover.svg)  0px -2px no-repeat;
 }
 
 @media (max-width: 480px) {

@@ -9,15 +9,15 @@
     margin: 16px 0;
     padding: 16px;
 
-    font-family: var(--text-family);
+    font-family: var(--text-family, sans-serif);
     font-size: 13px;
     font-weight: 600;
 
     line-height: 16px;
 
-    background-color: var(--white);
+    background-color: var(--white, #FFFFFF);
 
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-large, 16px);
 
     box-shadow: 0px 0px 10px rgba(4, 13, 42, 0.1);
 
@@ -47,13 +47,13 @@
 }
 
 .menu-mobile__link {
-    color: var(--link-color-black);
+    color: var(--link-black-color, #0C1227);
 
     text-decoration: none;
 }
 
 .menu-mobile__link:hover {
-    color: var(--link-color-black_hover);
+    color: var(---link-black-color_hover, #2F448A);
 
     text-decoration: none;
 }

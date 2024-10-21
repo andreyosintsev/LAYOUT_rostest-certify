@@ -2,16 +2,16 @@
     width: 100%;
     padding: 16px;
 
-    color: var(--text-color-main);
-    font-family: var(--text-family);
+    color: var(--text-color-main, #0C1227);
+    font-family: var(--text-family, sans-serif);
     font-size: 12px;
     font-weight: 500;
 
     line-height: 15px;
 
-    background-color: var(--white);
+    background-color: var(--white, #FFFFFF);
 
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-large, 16px);
 
     box-shadow: 4px 4px 24px rgba(4, 13, 42, 0.01);
 }
@@ -31,7 +31,7 @@
     column-gap: 16px;
     margin-bottom: 16px;;
 
-    color: var(--link-color);
+    color: var(--text-color-second, #2F448A);
 
     text-decoration: none;
 
@@ -61,7 +61,7 @@
 .sidebar-stats__agencies {
     width: 100%;
 
-    color: var(--link-color);
+    color: var(--text-color-second, #2F448A);
 
     text-decoration: none;
 
@@ -71,7 +71,7 @@
 .sidebar-stats__certificates:hover,
 .sidebar-stats__manufacturers:hover,
 .sidebar-stats__agencies:hover {
-    color: var(--link-color_hover);
+    color: var(--link-normal-color_hover, #5969A1);
 
     text-decoration: none;
 }
@@ -81,7 +81,7 @@
 .sidebar-stats__agencies-subtitle {
     width: 100%;
 
-    color: var(--light-black);
+    color: var(--black-light);
     font-size: 12px;
     font-weight: 500;
 

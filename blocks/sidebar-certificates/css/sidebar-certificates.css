@@ -2,16 +2,16 @@
     width: 100%;
     padding: 16px;
 
-    color: var(--text-color-main);
-    font-family: var(--text-family);
+    color: var(--text-color-main, #0C1227);
+    font-family: var(--text-family, sans-serif);
     font-size: 12px;
     font-weight: 500;
 
     line-height: 15px;
 
-    background-color: var(--white);
+    background-color: var(--white, #FFFFFF);
 
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-large, 16px);
 
     box-shadow: 4px 4px 24px rgba(4, 13, 42, 0.01);
 }
@@ -26,7 +26,7 @@
 .sidebar-certificates__item {
     padding: 12px 0;
 
-    border-bottom: 1px solid #E6E8F0;
+    border-bottom: 1px solid var(--gray-light, #E7E7E7);
 
     overflow: hidden;
 }
@@ -42,6 +42,14 @@
 }
 
 .sidebar-certificates__link {
+    color: var(--link-black-color, #0C1227);
+
+    text-decoration: none;
+}
+
+.sidebar-certificates__link:hover {
+    color: var(--link-black-color_hover, #2F448A);
+    
     text-decoration: none;
 }
 
@@ -77,13 +85,9 @@
     padding-right: 14px;
     padding-left: 12px;
 
-    color: var(--link-color-black);
-
-    background: url('../images/arrow-right.svg') no-repeat center right; 
+    background: url('../../../common/images/arrow-right.svg') no-repeat center right; 
 }
 
 .sidebar-certificates__description:hover {
-    color: var(--link-color-black_hover);
-
-    background: url('../images/arrow-right_hover.svg') no-repeat center right; 
+    background: url('../../../common/images/arrow-right_hover.svg') no-repeat center right; 
 }

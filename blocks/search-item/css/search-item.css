@@ -1,16 +1,16 @@
 .search-item {
     padding: 20px;
 
-    color: var(--text-color-second);
-    font-family: var(--text-family);
+    color: var(--text-color-second, #2F448A);
+    font-family: var(--text-family, sans-serif);
     font-size: 15px;
     font-weight: 600;
 
     line-height: 19px;
 
-    background-color: var(--white);
+    background-color: var(--white, #FFFFFF);
 
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-large, 16px);
 
     overflow: hidden;
 }
@@ -36,8 +36,8 @@
     width: 100%;
     padding: 20px;
 
-    background-color: var(--off-white);
-    border-radius: var(--border-radius);
+    background-color: var(--off-white, #F9F9FB);
+    border-radius: var(--border-radius, 12px);
 }
 
 .search-item__magnifier {
@@ -47,7 +47,7 @@
 
     flex-shrink: 0;
 
-    background-image: url(../images/magnifier.svg);
+    background-image: url(../../../common/images/magnifier.svg);
     background-size: cover;
 }
 
@@ -59,27 +59,27 @@
 
     border: none;
 
-    background-color: var(--off-white);
+    background-color: var(--off-white, #F9F9FB);
 
     outline: 0;
     outline-offset: 4px;
-    caret-color: var(--black);
+    caret-color: var(--black, #0C1227);
 }
 
-.search-item__input:focus {
+.search-item__magnifier-input:has(.search-item__input:focus) {
     outline: none;
 }
 
-.search-item__input:not(:focus-visible) {
+.search-item__magnifier-input:has(.search-item__input:not(:focus-visible)) {
     outline: none;
 }
 
-.search-item__input:focus-visible {
-    outline: 1px solid #AAAAAA;
+.search-item__magnifier-input:has(.search-item__input:focus-visible) {
+    outline: 2px solid var(--gray-light, #E7E7E7);
 }
 
 .search-item__input::placeholder {
-    color: var(--text-color-placeholder);
+    color: var(--text-color-placeholder, #6776A9);
 }
 
 .search-item__input:placeholder-shown {
@@ -92,31 +92,14 @@
 
     flex-shrink: 0;
 
-    color: var(--white);
     font-size: 17px;
-    font-weight: 700;
-
+    
     line-height: 21px;
 
-    border: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius, 12px);
 
-    background-color: var(--blue);
-
+    
     cursor: pointer;
-}
-
-.search-item__button:hover {
-    opacity: 80%;
-}
-
-.search-item__button:focus {
-    opacity: 100%;
-    outline: 0;
-}
-
-.search-item__button:focus-visible {
-    opacity: 80%;
 }
 
 @media (max-width: 480px) {
@@ -128,7 +111,7 @@
 
         line-height: 16px;
 
-        border-radius: var(--border-radius-large);
+        border-radius: var(--border-radius-large, 16px);
     }
 
     .search-item__title {

@@ -1,15 +1,11 @@
-* {
-    outline: 1px solid #aaa;
-}
-
 .title-section {
     display: block;
     margin: 0;
     padding: 0;
 
-    color: var(--text-color-second);
+    color: var(--text-color-second, #2F448A);
     font-size: 24px;
-    font-family: var(--text-family);
+    font-family: var(--text-family, sans-serif);
     font-weight: 700;
 
     line-height: 29px;
