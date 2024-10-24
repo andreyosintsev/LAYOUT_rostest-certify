@@ -7,7 +7,7 @@
 
     grid-template-areas: "logo search menu"
                          "logo search menu";
-    
+
     width: 100%;
     max-width: 1440px;
     left: 50%;
@@ -17,7 +17,7 @@
     padding: 20px 80px;
 
     transform: translateX(-50%);
-    
+
     background-color: var(--white, #FFFFFF);
     z-index: 5;
 }
