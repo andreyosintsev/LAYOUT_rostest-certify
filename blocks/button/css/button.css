@@ -1,5 +1,5 @@
 .button {
-    padding: 14px 20px;
+    padding: 11px 17px;
 
     color: var(--button-normal-color, #FFFFFF);
     font-family: var(--text-family, sans-serif);
@@ -12,7 +12,7 @@
 
     border-radius: var(--border-radius-small, 8px);
 
-    border: 2px solid var(--button-normal-border, #2F448A);
+    border: 3px solid var(--button-normal-border, #2F448A);
     outline: none;
 
     cursor: pointer;
@@ -23,11 +23,11 @@
 
     background-color: var(--button-normal-background_hover, #5969A1);
 
-    border: 2px solid var(--button-normal-border_hover, #5969A1);
+    border: 3px solid var(--button-normal-border_hover, #5969A1);
 }
 
 .button:focus {
-    outline: 2px solid var(--gray-light, #E7E7E7);
+    outline: 3px solid var(--gray-light, #E7E7E7);
 }
 
 .button_not_active {

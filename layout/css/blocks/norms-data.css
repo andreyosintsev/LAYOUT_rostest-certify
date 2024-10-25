@@ -1,4 +1,4 @@
-.norms-item {
+.norms-data {
     display: block;
     padding: 20px;
 
@@ -13,9 +13,9 @@
     overflow: hidden;
 }
 
-.norms-item__title {
+.norms-data__title {
     margin-bottom: 12px;
-
+    color: var(--text-color-second, #2F448A);
     font-size: 16px;
     font-weight: 700;
 
@@ -24,17 +24,8 @@
     text-decoration: none;
 }
 
-.norms-item__link {
-    color: var(--link-normal-color, #2F448A);
 
-    text-decoration: none;
-}
-
-.norms-item__link:hover {
-    color: var(--link-normal-color_hover, #5969A1);
-}
-
-.norms-item__description {
+.norms-data__description {
     margin-bottom: 12px;
 
     color: var(--text-color-sub, #4F5463);
@@ -46,17 +37,36 @@
     text-align: left;
 }
 
+.norms-data__action {
+    margin-right: 8px;
+}
+
+.norms-data__action:last-child {
+    margin-right: 0;
+}
+
+
 @media (max-width: 480px) {
-    .norms-item {
+    .norms-data {
         padding: 16px;
 
         border-radius: var(--border-radius-large, 16px);
     }
 
-    .norms-item__title {
+    .norms-data__title {
         font-size: 16px;
         font-weight: 700;
 
         line-height: 19.5px;
+    }
+
+    .norms-data__action {
+        display: block;
+        width: 100%;
+        margin: 0 0 6px 0;
+    }
+
+    .norms-data__action:last-child {
+        margin: 0;
     }
 }
