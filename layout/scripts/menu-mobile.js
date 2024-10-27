@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+
     // if (!menuMobile) {
     //     console.error('DOM: мобильное меню не найдено');
     //     return;
