@@ -1,12 +1,12 @@
 .menu-mobile {
     display: none;
 
-    position: absolute;
+    position: fixed;
     width: 288px;
-    top: 80px;
+    top: 0px;
     right: 16px;
 
-    margin: 16px 0;
+    margin-top: 16px;
     padding: 16px;
 
     font-family: var(--text-family, sans-serif);

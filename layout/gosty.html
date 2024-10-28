@@ -19,15 +19,41 @@
     <link rel="stylesheet" href="./css/blocks/title-section.css">
     <link rel="stylesheet" href="./css/blocks/norms-data.css">
     <link rel="stylesheet" href="./css/blocks/norms-item.css">
-    <link rel="stylesheet" href="./css/blocks/certificates-data.css">
     <link rel="stylesheet" href="./css/blocks/certificates-item.css">
     <link rel="stylesheet" href="./css/blocks/wp-page-numbers.css">
     <link rel="stylesheet" href="./css/blocks/sidebar-stats.css">
     <link rel="stylesheet" href="./css/blocks/sidebar-countries.css">
     <link rel="stylesheet" href="./css/blocks/sidebar-certificates.css">
+    <link rel="stylesheet" href="./css/blocks/modal.css">
     <link rel="stylesheet" href="./css/blocks/footer.css">
 </head>
 <body>
+    <div class="overlay"></div>
+    <div class="menu-mobile">
+        <ul class="menu-mobile__items">
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="naiti-sertifikat-po-nomeru.html" title="">Поиск по номеру</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="naiti-sertifikat-po-vidu-produktsii.html" title="">Продукция</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="kompanii.html" title="">Изготовители</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="reestr-sertifikatov.html" title="">Реестр сертификатов</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="organy-po-sertifikacii.html" title="">Органы по сертификации</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="gosty.html" title="">ГОСТы</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="#" title="">О сайте</a>
+            </li>
+        </ul>
+    </div>
     <header class="nav-top">
         <div class="logo">
             <a class="logo__link" href="home.html" title="rostest-certify.ru — Сертификаты соответствия">
@@ -81,32 +107,6 @@
                 <div class="menu-mobile-search-button__button"></div>
             </div>
         </nav>
-
-        <div class="menu-mobile">
-            <ul class="menu-mobile__items">
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="naiti-sertifikat-po-nomeru.html" title="">Поиск по номеру</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="naiti-sertifikat-po-vidu-produktsii.html" title="">Продукция</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="kompanii.html" title="">Изготовители</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="reestr-sertifikatov.html" title="">Реестр сертификатов</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="organy-po-sertifikacii.html" title="">Органы по сертификации</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="gosty.html" title="">ГОСТы</a>
-                </li>
-                <li class="menu-mobile__item">
-                    <a class="menu-mobile__link" href="#" title="">О сайте</a>
-                </li>
-            </ul>
-        </div>
     </header>
     <div class="wrapper">
         <div class="hero">
@@ -208,7 +208,7 @@
                                 Совместимость технических средств электромагнитная. Ограничение изменений напряжения, колебаний напряжения и фликера в низковольтных системах электроснабжения общего назначения. Технические средства с потребряемым током не более 16 А (в одной фазе), подключаемые к электрической сети при несоблюдении определенных условий подключения. Нормы и методы испытаний
                             </div>
                             <div class="norms-data__actions">
-                                <button class="button norms-data__action" type="button">
+                                <button class="button norms-data__action" id="button-view-gost" type="button">
                                     Смотреть ГОСТ
                                 </button>
                                 <button class="button norms-data__action button_outlined" type="button">
@@ -542,8 +542,15 @@
             </div>
         </div>
     </footer>
-    <div class="overlay"></div>
-
+    <div class="modal-overlay modal-overlay_visible"></div>
+    <div class="modal modal_visible">
+        <div class="modal__content">
+            <div class="modal__close" title="Закрыть"></div>
+            <img src="../../common/images/norm_viewer.jpg" alt="PDF Viewer">
+        </div>
+    </div>
     <script src="./scripts/menu-mobile.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/gosty.js"></script>
 </body>
 </html>
