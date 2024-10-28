@@ -162,10 +162,6 @@ h1 {
     background-color: var(--gray-light, #E7E7E7);
 }
 
-.ancestor {
-    margin-left: 10px;
-}
-
 @media (max-width: 960px) {
     .hero {
         display: block;
