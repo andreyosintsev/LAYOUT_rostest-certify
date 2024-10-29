@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='yandex-verification' content='5034b468f638d5d4' />
     <meta name="yandex-verification" content="b0dd183a09ff4e68" />
-    <title>Реестр сертификатов - rostest-certify.ru</title>
+    <title>Найти сертификат соответствия по номеру - rostest-certify.ru</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/common/normalize.css">
     <link rel="stylesheet" href="./css/common/consts.css">
-    <link rel="stylesheet" href="./css/pages/reestr-sertifikatov.css">
+    <link rel="stylesheet" href="./css/pages/o-sajte.css">
     <link rel="stylesheet" href="./css/blocks/menu-main.css">
     <link rel="stylesheet" href="./css/blocks/menu-mobile.css">
     <link rel="stylesheet" href="./css/blocks/button.css">
     <link rel="stylesheet" href="./css/blocks/search-item.css">
     <link rel="stylesheet" href="./css/blocks/breadcrumbs.css">
-    <link rel="stylesheet" href="./css/blocks/certificates-table.css">
+    <link rel="stylesheet" href="./css/blocks/title-section.css">
+    <link rel="stylesheet" href="./css/blocks/certificates-item.css">
     <link rel="stylesheet" href="./css/blocks/wp-page-numbers.css">
     <link rel="stylesheet" href="./css/blocks/sidebar-stats.css">
     <link rel="stylesheet" href="./css/blocks/sidebar-countries.css">
@@ -46,7 +47,7 @@
                 <a class="menu-mobile__link" href="gosty.html" title="">ГОСТы</a>
             </li>
             <li class="menu-mobile__item">
-                <a class="menu-mobile__link" href="o-sajte.html" title="">О сайте</a>
+                <a class="menu-mobile__link" href="#" title="">О сайте</a>
             </li>
         </ul>
     </div>
@@ -94,7 +95,7 @@
                     </a>
                 </li>
                 <li class="menu-main__item">
-                    <a href="o-sajte.html" title="О сайте">
+                    <a href="https://rostest-certify.ru/o-sajte/" title="О сайте">
                         О сайте
                     </a>
                 </li>
@@ -103,6 +104,32 @@
                 <div class="menu-mobile-search-button__button"></div>
             </div>
         </nav>
+
+        <div class="menu-mobile">
+            <ul class="menu-mobile__items">
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="naiti-sertifikat-po-nomeru.html" title="">Поиск по номеру</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="naiti-sertifikat-po-vidu-produktsii.html" title="">Продукция</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="kompanii.html" title="">Изготовители</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="reestr-sertifikatov.html" title="">Реестр сертификатов</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="organy-po-sertifikacii.html" title="">Органы по сертификации</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="gosty.html" title="">ГОСТы</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#" title="">О сайте</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <div class="wrapper">
         <div class="hero">
@@ -110,101 +137,106 @@
                 <div class="breadcrumbs hero__breadcrumbs">
                     <a class="breadcrumbs__link" href="./home.html" title="На главную">Главная</a>
                     /
-                    <a class="breadcrumbs__link" href="./reestr-sertifikatov.html" title="Реестр сертификатов и деклараций">Реестр сертификатов и деклараций</a>
+                    О сайте
                 </div>
                 <h1 class="hero__title">
-                    Реестр сертификатов
+                    О сайте
                 </h1>
-                <div class="search-item">
-                    <div class="search-item__title">
-                        Поиск сертификата по номеру:
-                    </div>
-                    <div class="search-item__input-button">
-                        <div class="search-item__magnifier-input">
-                            <div class="search-item__magnifier"></div>
-                            <input class="search-item__input" placeholder="Например, RU.СЩ04.B02830">
-                        </div>
-                        <button class="button search-item__button">Поиск</button>
-                    </div>
-                </div>
             </div>
         </div>
         <main class="main">
             <div class="content">
                 <div class="content__ad"></div>
-                <section class="content__foreword">
-                    <p>Представлен реестр сертификатов ГОСТ Р, Таможенного союза, и Деклараций соответствия Таможенного союза, автоматически создаваемый на основе документов, представленных на данном сайте. При помощи этого реестра можно выполнить проверку сертификатов на подлинность онлайн, путем сравнения реквизитов сертификата с его графическим изображением. Сертификаты также доступны для посмотра и скачивания.</p>
-                 </section>
-                <section class="certificates">
-                    <div class="certificates-table">
-                        <div class="certificates-table__cell certificates-table__cell_header">
-                            <a class="certificates-table__link" href="#" title="Сортировать по номеру сертификата">
-                                № сертификата<span class="certificates-table__scroll"></span>
-                            </a>
-                        </div>
-                        <div class="certificates-table__cell certificates-table__cell_header">
-                            <a class="certificates-table__link" href="#" title="Сортировать по наименованию продукции">
-                                Продукция<span class="certificates-table__scroll certificates-table__scroll_up"></span>
-                            </a>
-                        </div>
-                        <div class="certificates-table__cell certificates-table__cell_header">
-                            Срок действия
-                        </div>
-                        <div class="certificates-table__cell">
-                            <div class="certificates-table__flag-number">
-                                <span class="flag certificates-table__flag">
-                                    <img src="./images/flags/ru.png" alt="RU" title="Произведено в России">
-                                </span>
-                                № РОСС RU.АА49.В00022
-                            </div>
-                        </div>
-                        <div class="certificates-table__cell">
-                            <a class="certificates-table__link" href="#" title="Сертификат на Многофункциональный принтер, модели: DCP-1602R, DCP-1600R, «Brother»">
-                                Многофункциональный принтер, модели: DCP-1602R, DCP-1600R, «Brother»
-                            </a>
-                            <a class="certificates-table__link certificates-table__link_manufacturer" href="#" title="Сортировать по наименованию продукции">
-                                Brother Industries Ltd.
-                            </a>
-                        </div>
-                        <div class="certificates-table__cell">
-                            с 21.05.2015 по 20.05.2020 включительно
-                        </div>
-                        <div class="certificates-table__cell">
-                            <div class="certificates-table__flag-number">
-                                <span class="flag certificates-table__flag">
-                                    <img src="./images/flags/ru.png" alt="RU" title="Произведено в России">
-                                </span>
-                                № РОСС RU.АА49.В00022
-                            </div>
-                        </div>
-                        <div class="certificates-table__cell">
-                            <a class="certificates-table__link" href="#" title="Сертификат на Многофункциональный принтер, модели: DCP-1602R, DCP-1600R, «Brother»">
-                                Многофункциональный принтер, модели: DCP-1602R, DCP-1600R, «Brother»
-                            </a>
-                            <a class="certificates-table__link certificates-table__link_manufacturer" href="#" title="Сортировать по наименованию продукции">
-                                Brother Industries Ltd.
-                            </a>
-                        </div>
-                        <div class="certificates-table__cell">
-                            с 21.05.2015 по 20.05.2020 включительно
-                        </div>
-                    </div>
-                    <div class="certificates__nav" id='wp_page_numbers'>
+                <section class="about">
+                    <h3 class="title-section about__title">
+                        О сайте
+                    </h3>
+                    <div class="about__content">
+                        <p>
+                            <strong>rostest-certify.ru</strong> — это сервис, предлагающий своим пользователям скачать сертификаты соответствия ГОСТ Р и Таможенного союза, а также декларации соответствия. Многие сертификаты и декларации представлены вместе с приложениями. Сертификаты, представленные на страницах сайта, постоянно пополняются. Представленные документы могут быть скачаны для ознакомительных целей.
+                        </p>
+                        <p>
+                            На сайте можно найти следующие виды сертификатов:
+                        </p>
                         <ul>
-                            <li class="page_info">Стр. 1 из 176</li>
-                            <li class="active_page">
-                                <a href="https://rostest-certify.ru/reestr-sertifikatov/">1</a>
-                            </li>
-                            <li>
-                                <a href="https://rostest-certify.ru/reestr-sertifikatov/page/2/">2</a>
-                            </li>
-                            <li>
-                                <a href="https://rostest-certify.ru/reestr-sertifikatov/page/3/">3</a>
-                            </li>
-                            <li>
-                                <a href="https://rostest-certify.ru/reestr-sertifikatov/page/2/">&gt;</a>
-                            </li>
+                            <li>Сертификат соответствия ГОСТ Р — обязательная сертификация</li>
+                            <li>Сертификат соответствия ГОСТ Р — добровольная сертификация</li>
+                            <li>Сертификат соответствия Таможенного союза</li>
+                            <li>Декларация соответствия Таможенного союза</li>
                         </ul>
+                        <div class="about__items">
+                            <li class="about__item">
+                                <img class="about__image" src="../common/images/about/gost_o.jpg" alt="Сертификат соответствия ГОСТ Р — обязательная сертификация">
+                            </li>
+                            <li class="about__item">
+                                <img class="about__image" src="../common/images/about/gost_d.jpg" alt="Сертификат соответствия ГОСТ Р — добровольная сертификация">
+                            </li>
+                            <li class="about__item">
+                                <img class="about__image" src="../common/images/about/ss.jpg" alt="Сертификат соответствия Таможенного союза">
+                            </li>
+                            <li class="about__item">
+                                <img class="about__image" src="../common/images/about/ds.jpg" alt="Декларация соответствия Таможенного союза">
+                            </li>
+                        </div>
+                        <p>
+                            Сертификаты представлены в виде графических изображений отсканированных оригинальных документов и их копий, в том числе полученных из различных источников в сети Интернет. Также на страницах сайта вместе с изображениями представлена текстовая информация, содержащаяся в сертификатах.
+                        </p>
+                    </div>
+                </section>
+                <section class="disclamer">
+                    <h2 class="title-section disclamer__title">
+                        Отказ от ответственности
+                    </h2>
+                    <div class="disclamer__content">
+                        <p>
+                            Данный ресурс в сети Интернет никоим образом не относится и не связан с Росреестром, Росаккредитацией, Росстандартом и Ростестом и другими официальными органами Российской Федерации. Источником всех текстовых и графических материалов является сеть Интернет. Информация представлена для ознакомления. Коллектив сайта не несет ответственности за возможный прямой или косвенный ущерб, связанный с использованием информации, изложенной на данном сайте.
+                        </p>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <h2 class="title-section feedback__title">
+                        Обратная связь
+                    </h2>
+                    <div class="feedback__content">
+                        <p class="feedback__preface">
+                            Для связи с администрацией сайта воспользуйтесь следующей формой
+                        </p>
+                        <div role="form" class="wpcf7" id="wpcf7-f5397-p52-o1" lang="ru-RU" dir="ltr">
+                            <div class="screen-reader-response"></div>
+                            <form action="/o-sajte/#wpcf7-f5397-p52-o1" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="5397" />
+                                    <input type="hidden" name="_wpcf7_version" value="4.7" />
+                                    <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5397-p52-o1" />
+                                    <input type="hidden" name="_wpnonce" value="62db4d4764" />
+                                </div>
+                                <p>
+                                    <span class="wpcf7-form-control-wrap your-name">
+                                        <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ваше имя *" />
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="wpcf7-form-control-wrap your-email">
+                                        <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail *" />
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="wpcf7-form-control-wrap your-subject">
+                                        <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Тема" />
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="wpcf7-form-control-wrap your-message">
+                                        <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Ваше сообщение"></textarea>
+                                    </span>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                                </p>
+                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            </form>
+                        </div>
                     </div>
                 </section>
                 <div class="content__ad"></div>
@@ -377,7 +409,7 @@
                         </a>
                     </li>
                     <li class="menu-main__item">
-                        <a href="o-sajte.html" title="О сайте">
+                        <a href="https://rostest-certify.ru/o-sajte/" title="О сайте">
                             О сайте
                         </a>
                     </li>
