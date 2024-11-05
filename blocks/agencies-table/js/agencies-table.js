@@ -1,20 +1,19 @@
-'use strict';
-
 document.addEventListener("DOMContentLoaded", () => {
-    const expandinfos = document.querySelectorAll('.table_man.expandinfo');
-    const infos = document.querySelectorAll('.td_agencies_info');
+    const expandinfos = document.querySelectorAll('.agencies-table__expandinfo');
+    const infos = document.querySelectorAll('.agencies-table__cell_info');
 
-    expandinfos.forEach(i => {
-        i.addEventListener('click', clickHandler);
-    });
+    expandinfos.forEach(expandinfo => expandinfo.addEventListener('click', clickHandler));
     
     function clickHandler(e) {
-        infos.forEach(i => {
-            if (i.dataset.reg == e.currentTarget.dataset.reg) {
-                i.style.display="block";
-            } else {
-                i.style.display="none";              
-            }
+        const reg = e.currentTarget.dataset.reg;
+
+        expandinfos.forEach(expandinfo => expandinfo.classList.remove('agencies-table__expandinfo_expanded'));
+        e.currentTarget.classList.add('agencies-table__expandinfo_expanded');
+        
+        infos.forEach(info => {
+            if (info.dataset.reg == reg) 
+                info.classList.remove("agencies-table__cell_hidden");
+            else info.classList.add("agencies-table__cell_hidden");
         });
     }
 });
