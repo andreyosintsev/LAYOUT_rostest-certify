@@ -103,19 +103,10 @@
 }
 
 .certificates-table__flag {
-    display: inline-block;
     width: 24px;
     height: 16px;
-    margin-right: 8px;
 
     flex-shrink: 0;    
-}
-
-.certificates-table__flag img {
-    width: 100%;
-
-    border: 0.5px solid rgba(12, 18, 39, 0.16);
-    border-radius: var(--border-radius-xsmall, 4px);
 }
 
 @media (max-width: 480px) {

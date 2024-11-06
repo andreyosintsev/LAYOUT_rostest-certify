@@ -108,21 +108,6 @@
     font-weight: 700;
 }
 
-.certificates-item__flag {
-    display: inline-block;
-    width: 32px;
-    height: 22px;
-    margin-right: 12px;
-}
-
-.certificates-item__flag img {
-    width: 32px;
-    height: 22px;
-
-    border: 0.5px solid rgba(12, 18, 39, 0.16);
-    border-radius: var(--border-radius-xsmall, 4px);
-}
-
 .certificates-item__category a {
     display: block;
 
