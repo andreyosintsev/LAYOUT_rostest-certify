@@ -17,7 +17,7 @@
     overflow: hidden;
 }
 
-.tag {
+.tags__tag {
     padding: 10px 16px;
 
     background-color: var(--off-white, #F9F9FB);
