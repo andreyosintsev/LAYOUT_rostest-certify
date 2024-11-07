@@ -6,8 +6,10 @@
     <title>Specs Block</title>
     <link rel="stylesheet" href="../../common/css/normalize.css">
     <link rel="stylesheet" href="../../common/css/consts.css">
-    <link rel="stylesheet" href="./css/specs.css">
     <link rel="stylesheet" href="../button/css/button.css">
+    <link rel="stylesheet" href="../flag/css/flag.css">
+    <link rel="stylesheet" href="../tags/css/tags.css">
+    <link rel="stylesheet" href="./css/specs.css">
 </head>
 <body style="background-color: yellowgreen; padding: 10px;">
     <div class="specs">
@@ -26,19 +28,55 @@
                     № сертификата
                 </div>
                 <div class="specs__value">
-                    № РОСС RU.АА49.В00022
+                    <div class="specs__flag-number">
+                        <div class="flag specs__flag">
+                            <img class="flag__image" src="../../common/images/flags/ru.png" alt="RU" title="Произведено в России">
+                        </div>
+                        <div class="specs__number">
+                            РОСС RU.АА49.В00022
+                        </div>
+                    </div>
                 </div>
                 <div class="specs__key">
                     Срок действия
                 </div>
                 <div class="specs__value">
-                    с 22.08.2022 по 21.08.2027 включительно
+                    <div class="specs__validity-validated">
+                        <div class="specs__validity">
+                            с 22.08.2022 по 21.08.2027 включительно
+                        </div>
+                        <div class="specs__validated specs__validated_false">
+                            Срок истёк
+                        </div>
+                    </div>                    
                 </div>
                 <div class="specs__key">
                     Орган по сертификации
                 </div>
                 <div class="specs__value">
-                    Тюменский некоммерческий фонд сертификации
+                    <div class="specs__agency">
+                        <div class="specs__agency-title">
+                            <a class="specs__agency-title-link" href="#" title="Перейти на сайт Тюменский некоммерческий фонд сертификации">
+                                Тюменский некоммерческий фонд сертификации
+                            </a>
+                        </div>
+                        <div class="specs__agency-reg">
+                            RA.RU.10АБ33
+                        </div>
+                        <div class="specs__agency-website">
+                            <a class="specs__agency-website-link" href="tnfs.ru" title="Перейти на сайт Тюменский некоммерческий фонд сертификации">
+                                tnfs.ru
+                            </a>
+                        </div>
+                        <div class="specs__agency-info">
+                            Орган по сертификации: № RA.RU.10АБ33 от 21.01 2016 Орган по сертификации промышленной продукции "Тюменский некоммерческий фонд сертификации". Россия, 625026, Тюменская обл. г. Тюмень, ул. Одесская, 52а. Тел/факс (3452) 32-01-46, 32-00-69, 20-07-43, web: www.tnfs.ru; E-mail: tnfs@list.ru
+                        </div>
+                        <div class="specs__agency-more">
+                            <a class="specs__agency-more-link" href="https://rostest-certificates.ru/sredstva-individualnoj-zashhity-nog-obuv-specialnaya-kozhanaya-v-tom-chisle-uteplennaya-dlya-zashhity-ot-ximicheskix-faktorov-mexanicheskix-vozdejstvij-polubotinki-s-perforaciej-polubotinki-boti/" title="Электрическая энергия, поставляемая потребителям от распределительных электрических сетей (центров питания)">
+                                Другие сертификаты, выданные органом
+                            </a>                            
+                        </div>                        
+                    </div>
                 </div>
                 <div class="specs__key">
                     Заявитель/декларант
@@ -50,28 +88,62 @@
                     Продукция (услуга, работа)
                 </div>
                 <div class="specs__value">
-                    Приборы электрические бытовые для хранения пищи: морозильные лари, морозильные шкафы (камеры) вертикального типа, холодильники торговых марок "Affendiler", "Delvento", "DeLonghi", "Galatec", "GoldStar", "GRESSEL", "hi", "ICQN", "Jacky's", "Leran", "LuxDorf, "novex", "Optima", "Samtron", "Schaub Lorenz", "Sennixwell", "Simfer", "Willmark", модели (см. Приложение - бланки № 0890901, № 0890902). Изготовлена в соответствии с Европейскими директивами 2006/95/ЕС, 2004/1087ЕС. Серийный выпуск
+                    <div class="specs__product">
+                        Приборы электрические бытовые для хранения пищи: морозильные лари, морозильные шкафы (камеры) вертикального типа, холодильники торговых марок "Affendiler", "Delvento", "DeLonghi", "Galatec", "GoldStar", "GRESSEL", "hi", "ICQN", "Jacky's", "Leran", "LuxDorf, "novex", "Optima", "Samtron", "Schaub Lorenz", "Sennixwell", "Simfer", "Willmark", модели (см. Приложение - бланки № 0890901, № 0890902). Изготовлена в соответствии с Европейскими директивами 2006/95/ЕС, 2004/1087ЕС. Серийный выпуск
+                    </div>
                 </div>
                 <div class="specs__key">
                     Код ТН ВЭД ТС
                 </div>
                 <div class="specs__value">
-                    84 - Реакторы ядерные, котлы, оборудование и механические устройства; их части
-                    8418 - Холодильники, морозильники и прочее холодильное или морозильное оборудование электрическое или других типов; тепловые насосы
-                    8418 30 200 1 - Морозильники бытовые
+                    <div class="specs__category">
+                        <a class="specs__category-link" href="#">
+                            <span class="number">8</span><span class="number">4</span> - Реакторы ядерные, котлы, оборудование и механические устройства; их части
+                        </a>
+                        <div class="ancestor">
+                            <a class="specs__category-link" href="#">
+                                <span class="number">8</span><span class="number">4</span><span class="number">1</span><span class="number">8</span> - Холодильники, морозильники и прочее холодильное или морозильное оборудование электрическое или других типов; тепловые насосы
+                            </a>
+                            <div class="ancestor">
+                                <a class="specs__category-link" href="#">
+                                    <span class="number">8</span><span class="number">4</span><span class="number">1</span><span class="number">8</span> <span class="number">3</span><span class="number">0</span> <span class="number">2</span><span class="number">0</span><span class="number">0</span> <span class="number">1</span> - Морозильники бытовые
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="specs__key">
                     Соответствует требованиям
                 </div>
                 <div class="specs__value">
-                    ТР ТС 004/2011 - "О безопасности низковольтного оборудования"
-                    ТР ТС 020/2011 - "Электромагнитная совместимость технических средств"
+                    <div class="specs__complies">
+                        <a class="specs__complies-link" href="#" title="Скачать ТР ТС 004/2011 - О безопасности низковольтного оборудования"><span class="number">ТР ТС 004/2011</span> - "О безопасности низковольтного оборудования"</a>
+                        <a class="specs__complies-link" href="#" title="Скачать ТР ТС 020/2011 - Электромагнитная совместимость технических средств"><span class="number">ТР ТС 020/2011</span> - "Электромагнитная совместимость технических средств"</a>
+                    </div>
                 </div>
                 <div class="specs__key">
                     Изготовитель
                 </div>
                 <div class="specs__value">
-                    Изготовитель: Закрытое акционерное общество "ABC Фарбен". 396689, Воронежская обл., Ольховатский p-он, с. Бугаевка, ул. Ломоносова, д. 84
+                    <div class="specs__manufacturer">
+                        <div class="specs__manufacturer-logo-title">
+                            <div class="specs__manufacturer-logo">
+                                <img class="specs__manufacturer-logo-image"
+                                      src="../../common/images/logos/asus.png">
+                            </div>
+                            <div class="specs__manufacturer-title">
+                                ABC Фарбен
+                            </div>
+                        </div>
+                        <div class="specs__manufacturer-info">
+                            Закрытое акционерное общество "ABC Фарбен". 396689, Воронежская обл., Ольховатский p-он, с. Бугаевка, ул. Ломоносова, д. 84
+                        </div>
+                        <div class="specs__manufacturer-more">
+                            <a class="specs__agency-more-link" href="https://rostest-certificates.ru/sredstva-individualnoj-zashhity-nog-obuv-specialnaya-kozhanaya-v-tom-chisle-uteplennaya-dlya-zashhity-ot-ximicheskix-faktorov-mexanicheskix-vozdejstvij-polubotinki-s-perforaciej-polubotinki-boti/" title="Электрическая энергия, поставляемая потребителям от распределительных электрических сетей (центров питания)">
+                                Другая продукция этого изготовителя
+                            </a>   
+                        </div>
+                    </div>
                 </div>
                 <div class="specs__key">
                     Основание
@@ -87,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <div class="specs__downloads">
+        <div class="specs__downloads specs__downloads_bottom">
             <button class="button specs__download" type="button">
                 Скачать сертификат
                 <div class="specs__download-details">1500х2146 px</div>
@@ -95,6 +167,19 @@
             <button class="button specs__download button_outlined" type="button">
                 Скачать приложение
             </button>
+        </div>
+        <div class="tags specs__tags">
+            <div class="tags__tag">камера</div>
+            <div class="tags__tag">камера морозильная</div>
+            <div class="tags__tag">камера вертикальная</div>
+            <div class="tags__tag">ларь</div>
+            <div class="tags__tag">ларь морозильный</div>
+            <div class="tags__tag">прибор</div>
+            <div class="tags__tag">прибор для хранения</div>
+            <div class="tags__tag">прибор для хранения пищи</div>
+            <div class="tags__tag">холодильник</div>
+            <div class="tags__tag">шкаф</div>
+            <div class="tags__tag">шкаф морозильный</div>
         </div>
     </div>
     <script src="./js/products-list.js"></script>
