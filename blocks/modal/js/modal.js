@@ -24,6 +24,8 @@ function closeModal(body, modal, overlay) {
 
     const visibleModals = document.querySelectorAll('.modal_visible');
 
-    if (overlay && visibleModals.length === 0) overlay.classList.remove('modal-overlay_visible');
-    if (body) body.classList.remove('no-scroll');
+    if (overlay && visibleModals.length === 0) {
+        overlay.classList.remove('modal-overlay_visible');
+        if (body) body.classList.remove('no-scroll');
+    }
 }
