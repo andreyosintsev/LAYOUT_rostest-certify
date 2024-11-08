@@ -3,10 +3,8 @@
     display: none;
     left: 50%;
     top: 50%;
-    min-width: 320px;
-    max-width: fit-content;
-    width: 75%;
-    height: 80vh;
+    width: 100%;
+    max-width: 440px;
     padding: 20px;
 
     transform: translate(-50%, -50%);
@@ -31,28 +29,124 @@
 }
 
 .modal__header {
-    position: relative;
-    height: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
-.modal__content {
-    display: block;
-    height: 90%;
+.modal__title {
+    margin-bottom: 8px;
 
-    overflow: auto;
+    color: var(--text-color-second, #2F448A);
+    font-weight: 700;
+
+    line-height: 20px;
+}
+
+.modal__subtitle {
+    color: var(--black-light, #4F5463);
+    font-size: 13px;
+    font-weight: 500;
+
+    line-height: 16px;
 }
 
 .modal__close {
     position: absolute;
-    top: 4px;
-    right: 3px;
+    top: 21px;
+    right: 20px;
     width: 12px;
     height: 12px;
 
     background: url(../../../common/images/close.svg) no-repeat;
 
     cursor: pointer;
+}
+
+.modal__content {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.modal__line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 24px;
+
+    background-color: var(--gray-light, #E7E7E7);
+}
+
+.modal__group {
+    margin-bottom: 12px;
+}
+
+.modal__label {
+    display: block;
+    margin-left: 8px;
+    margin-bottom: 4px;
+
+    color: var(--gray-darker,#9EA0A9);
+}
+
+.modal__text {
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 20px 16px;
+
+    color: var(--black-light, #4F5463);
+
+    background-color: var(--off-white, #F9F9FB);
+    
+    border: none;
+    border-radius: var(--border-radius-small, 8px);
+
+    outline: none;
+}
+
+.modal__text:focus {
+    outline: 2px solid var(--gray-light, #E7E7E7);
+}
+
+.modal__text::placeholder {
+    color: var(--text-color-placeholder, #6776A9);
+}
+
+.modal__link {
+    display: block;
+    padding-top: 4px;
+
+    color: var(--link-gray-color, #505463);
+    
+    text-decoration: underline;
+}
+
+.modal__link:hover {
+    color: var(--gray-darklight, #535867);
+}
+
+.modal__link_right {
+    text-align: right;
+}
+
+.modal__button {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    padding: 16px 17px;
+}
+
+.modal__subcontent {
+    color: var(--black-light, #4F5463);
+
+    text-align: center;
+}
+
+.modal__subcontent-link {
+    color: var(--blue, #2F448A);
+}
+
+.modal__subcontent-link:hover {
+    color: var( --blue-light, #5969A1);
 }
 
 .modal-overlay {
@@ -75,7 +169,5 @@
 @media (max-width: 480px) {
     .modal {
         padding: 16px;
-
-        border-radius: var(--border-radius-large, 16px);
     }
 }
