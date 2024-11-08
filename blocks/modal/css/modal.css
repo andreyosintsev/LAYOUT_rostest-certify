@@ -111,6 +111,14 @@
     color: var(--text-color-placeholder, #6776A9);
 }
 
+.modal__text_error {
+    outline: 2px solid var(--error, #FF6666);
+}
+
+.modal__text_error::placeholder {
+    color: var(--error, #FF6666);
+}
+
 .modal__link {
     display: block;
     padding-top: 4px;
