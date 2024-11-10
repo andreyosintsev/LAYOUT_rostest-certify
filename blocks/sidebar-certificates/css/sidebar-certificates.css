@@ -23,6 +23,11 @@
     font-weight: 700;    
 }
 
+.sidebar-certificates__items {
+    margin: 0;
+    padding: 0;
+}
+
 .sidebar-certificates__item {
     padding: 12px 0;
 
@@ -90,4 +95,31 @@
 
 .sidebar-certificates__description:hover {
     background: url('../../../common/images/arrow-right_hover.svg') no-repeat center right; 
+}
+
+.sidebar-certificates__more {
+    margin-top: 16px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 16px;
+
+    text-align: right;
+}
+
+.sidebar-certificates__more-link {
+    padding-right: 14px;
+
+    color: var(--link-normal-color, #2F448A);
+    text-decoration: none;
+
+    background: url('../../../common/images/arrow-right.svg') no-repeat right
+}
+
+.sidebar-certificates__more-link:hover {
+    color: var(--link-normal-color_hover, #5969A1);
+    text-decoration: none;
+
+    background: url('../../../common/images/arrow-right_hover.svg') no-repeat right center;
 }
