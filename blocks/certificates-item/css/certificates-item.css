@@ -163,14 +163,14 @@
     color: var(--link-normal-color, #2F448A);
     text-decoration: none;
 
-    background: url('../../../common/images/arrow-right.svg') no-repeat right
+    background: url("../../../common/images/arrow-right.svg") no-repeat right
 }
 
 .certificates-item__more a:hover {
     color: var(--link-normal-color_hover, #5969A1);
     text-decoration: none;
 
-    background: url('../../../common/images/arrow-right_hover.svg') no-repeat right center;
+    background: url("../../../common/images/arrow-right_hover.svg") no-repeat right center;
 }
 
 .ancestor {

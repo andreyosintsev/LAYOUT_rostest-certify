@@ -37,7 +37,7 @@
 }
 
 .title-more__link:hover > .title-more__more {
-    background: url('../../../common/images/arrow-right_hover.svg') no-repeat right 7px bottom 2px;
+    background: url("../../../common/images/arrow-right_hover.svg") no-repeat right 7px bottom 2px;
 }
 
 .title-more__more {
@@ -48,7 +48,7 @@
 
     line-height: 17px;
 
-    background: url('../../../common/images/arrow-right.svg') no-repeat right 7px bottom 2px;
+    background: url("../../../common/images/arrow-right.svg") no-repeat right 7px bottom 2px;
 }
 
 @media (max-width: 480px) {

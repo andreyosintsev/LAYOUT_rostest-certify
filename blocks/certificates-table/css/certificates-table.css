@@ -84,17 +84,17 @@
     width: 12px;
     height: 12px;
 
-    background: url(../../../common/images/scroll.svg) center no-repeat;
+    background: url("../../../common/images/scroll.svg") center no-repeat;
 
     cursor: pointer;
 }
 
 .certificates-table__scroll_up {
-    background: url(../../../common/images/scroll-up.svg) center no-repeat;
+    background: url("../../../common/images/scroll-up.svg") center no-repeat;
 }
 
 .certificates-table__scroll_down {
-    background: url(../../../common/images/scroll-down.svg) center no-repeat;
+    background: url("../../../common/images/scroll-down.svg") center no-repeat;
 }
 
 .certificates-table__flag-number {
