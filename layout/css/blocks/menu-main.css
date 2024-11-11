@@ -104,7 +104,7 @@
 
     flex-shrink: 0;
 
-    background-image: url(../../../common/images/magnifier.svg);
+    background-image: url("../../images/magnifier.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -196,7 +196,7 @@
 .menu-mobile-search-button__search {
     width: 20px;
     height: 20px;
-    background: url("../../../common/images/magnifier.svg") no-repeat;
+    background: url("../../images/magnifier.svg") no-repeat;
 }
 
 .menu-mobile-search-button__button {
@@ -205,7 +205,7 @@
 
     width: 20px;
     height: 20px;
-    background: url("../../../common/images/button-menu-mobile.svg") no-repeat;
+    background: url("../../images/button-menu-mobile.svg") no-repeat;
 
     cursor: pointer;
 }
@@ -222,7 +222,7 @@
         grid-template-rows: 44px auto auto;
 
         grid-template-areas: "logo search search"
-                            "menu menu menu";
+                             "menu menu menu";
 
         gap: 20px 16px;
     }

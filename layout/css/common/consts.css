@@ -2,13 +2,10 @@
     ПРОЕКТ "ROSTEST-CERTIFY.RU"
     ШРИФТОВЫЕ И ЦВЕТОВЫЕ КОНСТАНТЫ
 
-    Последняя версия: 20.10.2024
+    Последняя версия: 08.11.2024
 
     UPD:
-        Перенесено в папку Common
-        уточнён цвет по макету black + opacity 72% = --light-black
-        добавлен раздел кнопок
-        переименованы цвета с добавлением суффиксов -light и -dark
+        Добавлен цвет --gray-darker, --error
 */
 
 @import url("./fonts.css");
@@ -20,19 +17,22 @@
 */
     --blue:                     #2F448A;
     --blue-light:               #5969A1; /* blue + opacity 80% */
-
+    
     --black:                    #0C1227;
     --black-light:              #4F5463; /* black + opacity 72% */
-
+    
     --gray-dark:                #505463;
     --gray-darklight:           #535867;
+    --gray-darker:              #9EA0A9; /* form label */
     --gray:                     #A3A3A3;
     --gray-light:               #E7E7E7; /* table border, focus outline, ad-gray */
 
     --white:                    #FFFFFF;
-
+        
     --off-white:                #F9F9FB;
     --page-bg:                  #FBFCFD;
+
+    --error:                    #FF6666; /* form error */
 
 /*
     Шрифты

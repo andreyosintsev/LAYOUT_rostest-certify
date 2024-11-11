@@ -164,9 +164,9 @@ h1 {
 .wpcf7-form {
     display: grid;
     grid-template-areas: "name email"
-                          "subject subject"
-                          "message message"
-                          "submit submit";
+                         "subject subject"
+                         "message message"
+                         "submit submit";
     grid-template-columns: auto auto;
 
     width: 100%;

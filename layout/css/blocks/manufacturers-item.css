@@ -47,11 +47,11 @@
 
     text-decoration: none;
 
-    background: url('../../../common/images/arrow-right.svg') no-repeat center right;
+    background: url("../../images/arrow-right.svg") no-repeat center right;
 }
 
 .manufacturers-item__title:hover {
-    background: url('../../../common/images/arrow-right_hover.svg') no-repeat center right;
+    background: url("../../images/arrow-right_hover.svg") no-repeat center right;
 }
 
 .manufacturers-item__link {

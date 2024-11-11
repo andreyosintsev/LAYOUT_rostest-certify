@@ -140,10 +140,6 @@ h1 {
     padding-top: 16px;
 }
 
-.preloader {
-    background: url(../../images/preloader.gif) 0% 0% no-repeat;
-}
-
 .sidebar {
     display: flex;
     flex-direction: column;

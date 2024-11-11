@@ -27,6 +27,7 @@
 }
 
 .specs__download-details {
+    display: block;
     margin-top: 3px;
 
     color: #C5CBDE;

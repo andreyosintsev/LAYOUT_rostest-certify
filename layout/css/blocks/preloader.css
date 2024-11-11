@@ -7,7 +7,7 @@
     height: 80px;
     transform: translate(-50%, -50%);
 
-    background: url(../../../layout/images/preloader.gif) 0% 0% no-repeat;
+    background: url("../../images/preloader.gif") 0% 0% no-repeat;
 
     z-index: 2000;
 }
