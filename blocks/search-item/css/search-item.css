@@ -19,7 +19,7 @@
     margin: 0 8px 8px;
 }
 
-.search-item__input-button {
+.search-item__form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -118,7 +118,7 @@
         margin: 0 0 12px;
     }
 
-    .search-item__input-button {
+    .search-item__form {
         display: block;
     }
 
