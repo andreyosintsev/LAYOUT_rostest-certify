@@ -107,6 +107,16 @@
     background-image: url("../../../common/images/magnifier.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
+
+    border: none;
+    outline: none;  
+
+    cursor: pointer;
+}
+
+.search__magnifier:hover {
+    background-image: url("../../../common/images/magnifier_hover.svg");
 }
 
 .search__form {
